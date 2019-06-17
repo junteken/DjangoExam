@@ -1,0 +1,14 @@
+{% extends 'Hello/base.html' %}
+{% load static %}
+{% block content %}
+
+   <h3>Recommend number is like below</h3>
+    <div style="text-align: left;">
+        <ul>
+            {% for num in numbers %}
+            <li>{{ num }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+
+{% endblock %}

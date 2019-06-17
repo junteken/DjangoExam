@@ -1,0 +1,11 @@
+{% extends 'Hello/base.html' %}
+{% load static %}
+{% block content %}
+<body>
+    <p>Hello World!</p>
+    <img src="{% static 'Hello/nadia.jpg' %}" alt="squirrel"/>
+    <p>{{ current_date }}</p>
+
+<a href="{%  url 'select' %}"> start from here!</a>
+</body>
+{% endblock %}

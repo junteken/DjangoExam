@@ -1,0 +1,12 @@
+{% extends 'Hello/base.html' %}
+{% load static %}
+{% block content %}
+
+    <p>input number</p>
+
+    <form action="{% url 'result' %}" method="get">
+        <input type="number" name="number"/>
+        <button type="submit">show result</button>
+    </form>
+
+{% endblock %}
